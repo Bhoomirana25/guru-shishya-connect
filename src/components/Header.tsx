@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, MapPin, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import skillExchangeIcon from '@/assets/skill-exchange-icon.png';
 
 const Header = () => {
@@ -53,8 +54,8 @@ const Header = () => {
               <MapPin className="h-4 w-4" />
               <span>Mumbai</span>
             </div>
-            <Button variant="ghost" size="sm">
-              Login
+            <Button variant="ghost" size="sm" asChild>
+              <Link to="/login">Login</Link>
             </Button>
             <Button variant="gradient" size="sm">
               Join Now
@@ -90,8 +91,8 @@ const Header = () => {
                   <span>Mumbai</span>
                 </div>
                 <div className="flex flex-col space-y-2">
-                  <Button variant="ghost" size="sm" className="w-full">
-                    Login
+                  <Button variant="ghost" size="sm" className="w-full" asChild>
+                    <Link to="/login">Login</Link>
                   </Button>
                   <Button variant="gradient" size="sm" className="w-full">
                     Join Now
