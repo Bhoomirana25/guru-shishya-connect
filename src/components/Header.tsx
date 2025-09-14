@@ -57,8 +57,8 @@ const Header = () => {
             <Button variant="ghost" size="sm" asChild>
               <Link to="/login">Login</Link>
             </Button>
-            <Button variant="gradient" size="sm">
-              Join Now
+            <Button variant="gradient" size="sm" asChild>
+              <Link to="/join-now">Join Now</Link>
             </Button>
           </div>
 
@@ -94,8 +94,8 @@ const Header = () => {
                   <Button variant="ghost" size="sm" className="w-full" asChild>
                     <Link to="/login">Login</Link>
                   </Button>
-                  <Button variant="gradient" size="sm" className="w-full">
-                    Join Now
+                  <Button variant="gradient" size="sm" className="w-full" asChild>
+                    <Link to="/join-now">Join Now</Link>
                   </Button>
                 </div>
               </div>

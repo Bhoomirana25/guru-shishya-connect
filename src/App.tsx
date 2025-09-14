@@ -9,6 +9,7 @@ import Signup from "./pages/Signup";
 import RoleSelection from "./pages/RoleSelection";
 import Dashboard from "./pages/Dashboard";
 import JoinShishya from "./pages/JoinShishya";
+import JoinNow from "./pages/JoinNow";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/role-selection" element={<RoleSelection />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/join-shishya" element={<JoinShishya />} />
+          <Route path="/join-now" element={<JoinNow />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
