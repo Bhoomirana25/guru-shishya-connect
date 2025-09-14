@@ -35,11 +35,11 @@ const Hero = () => {
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
             Connect Local{' '}
-            <span className="text-gradient-primary bg-gradient-to-r from-accent to-primary-light bg-clip-text text-transparent">
+            <span className="text-white">
               Gurus
             </span>{' '}
             and{' '}
-            <span className="text-gradient-primary bg-gradient-to-r from-primary-light to-accent bg-clip-text text-transparent">
+            <span className="text-white">
               Shishyas
             </span>
           </h1>
