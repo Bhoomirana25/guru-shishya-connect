@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50 shadow-card">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-8 lg:px-6 sm:px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
@@ -29,14 +29,14 @@ const Header = () => {
               <h1 className="text-xl font-bold text-gradient-primary">
                 BharatSkill Connect
               </h1>
-              <p className="text-xs text-muted-foreground hidden sm:block">
+              <p className="text-xs text-muted-foreground sm:hidden">
                 Connect. Learn. Grow.
               </p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="flex md:hidden items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -49,7 +49,7 @@ const Header = () => {
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="flex md:hidden items-center space-x-4">
             <div className="flex items-center space-x-1 text-sm text-muted-foreground">
               <MapPin className="h-4 w-4" />
               <span>Mumbai</span>
@@ -64,7 +64,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-secondary transition-smooth"
+            className="hidden md:block p-2 rounded-lg hover:bg-secondary transition-smooth"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -73,7 +73,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 animate-fade-in">
+          <div className="hidden md:block py-4 animate-fade-in">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a

@@ -55,7 +55,7 @@ const Features = () => {
 
   return (
     <section id="features" className="py-20 bg-background-secondary">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-8 lg:px-6 sm:px-4">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
@@ -69,7 +69,7 @@ const Features = () => {
         </div>
 
         {/* Main Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-8 mb-16">
           {mainFeatures.map((feature, index) => (
             <Card key={index} className="p-6 hover-lift shadow-card bg-gradient-card border-border/50">
               <div className={`inline-flex p-3 rounded-xl ${feature.bgColor} mb-4`}>
@@ -87,7 +87,7 @@ const Features = () => {
 
         {/* Additional Features */}
         <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-2 lg:grid-cols-1 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-bold text-card-foreground mb-4">
                 Additional Features
@@ -97,7 +97,7 @@ const Features = () => {
                 for seamless skill exchange in local neighborhoods.
               </p>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+              <div className="grid grid-cols-2 sm:grid-cols-1 gap-3 mb-8">
                 {additionalFeatures.map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-success flex-shrink-0" />
@@ -116,11 +116,11 @@ const Features = () => {
               <div className="bg-gradient-primary rounded-2xl p-8 text-center">
                 <Smartphone className="h-16 w-16 text-white mx-auto mb-4" />
                 <h4 className="text-2xl font-bold text-white mb-2">
-                  Mobile First Design
+                  Desktop First Design
                 </h4>
                 <p className="text-white/90">
-                  Optimized for smartphones with offline capabilities. 
-                  Perfect for India's mobile-first audience.
+                  Optimized for desktop experience with full features. 
+                  Perfect for comprehensive skill exchange.
                 </p>
               </div>
             </div>

@@ -43,10 +43,10 @@ const Footer = () => {
 
   return (
     <footer className="bg-card border-t border-border">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-8 lg:px-6 sm:px-4">
         {/* Main Footer Content */}
         <div className="py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-2 lg:grid-cols-1 gap-12">
             {/* Brand Section */}
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
@@ -106,7 +106,7 @@ const Footer = () => {
             </div>
 
             {/* Links Section */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-3 md:grid-cols-1 gap-8">
               <div>
                 <h4 className="font-semibold text-card-foreground mb-4">Platform</h4>
                 <ul className="space-y-3">
@@ -160,7 +160,7 @@ const Footer = () => {
 
         {/* Bottom Footer */}
         <div className="border-t border-border py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-row md:flex-col justify-between items-center space-y-0 md:space-y-4">
             <div className="flex items-center space-x-1 text-muted-foreground">
               <span>Made with</span>
               <Heart className="h-4 w-4 text-destructive fill-current" />

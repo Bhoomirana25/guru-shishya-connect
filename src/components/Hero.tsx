@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 container mx-auto px-8 lg:px-6 sm:px-4 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full glass border border-white/30 text-white mb-6 animate-fade-in">
@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-7xl lg:text-5xl sm:text-4xl font-bold text-white mb-6 animate-fade-in">
             Connect Local{' '}
             <span className="text-white">
               Gurus
@@ -45,13 +45,13 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-3xl mx-auto animate-fade-in">
+          <p className="text-2xl sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto animate-fade-in">
             Transform your neighborhood into a thriving learning community. 
             Learn skills, teach others, and build lasting connections in your local area.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in">
+          <div className="flex flex-row sm:flex-col gap-4 justify-center items-center mb-12 animate-fade-in">
             <Link to="/join-shishya">
               <Button variant="hero" size="xl" className="group">
                 Join as Shishya
@@ -65,7 +65,7 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-in">
+          <div className="grid grid-cols-3 sm:grid-cols-1 gap-8 max-w-2xl mx-auto animate-fade-in">
             {stats.map((stat, index) => (
               <div key={index} className="glass rounded-2xl p-6 border border-white/20 hover-lift">
                 <stat.icon className="h-8 w-8 text-accent mx-auto mb-3" />
