@@ -10,6 +10,7 @@ import RoleSelection from "./pages/RoleSelection";
 import Dashboard from "./pages/Dashboard";
 import JoinShishya from "./pages/JoinShishya";
 import JoinNow from "./pages/JoinNow";
+import FeaturesExplore from "./pages/FeaturesExplore";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/join-shishya" element={<JoinShishya />} />
           <Route path="/join-now" element={<JoinNow />} />
+          <Route path="/features" element={<FeaturesExplore />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

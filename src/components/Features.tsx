@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import { 
   MapPin, 
   MessageCircle, 
@@ -106,9 +107,11 @@ const Features = () => {
                 ))}
               </div>
               
-              <Button variant="gradient" size="lg" className="group">
-                Explore All Features
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <Button variant="gradient" size="lg" className="group" asChild>
+                <Link to="/features">
+                  Explore All Features
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
               </Button>
             </div>
             
