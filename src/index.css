@@ -212,4 +212,42 @@
     transform: translateY(-2px);
     box-shadow: var(--shadow-brand);
   }
+
+  /* Mobile-First Utility Classes */
+  .touch-manipulation {
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .mobile-tap-highlight {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Enhanced mobile button styles */
+  .mobile-button {
+    min-height: 44px; /* iOS Human Interface Guidelines */
+    min-width: 44px;
+    touch-action: manipulation;
+  }
+
+  /* Mobile-specific spacing */
+  .mobile-padding {
+    padding: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .mobile-padding {
+      padding: 1.5rem;
+    }
+  }
+
+  /* Smooth scrolling for mobile */
+  html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
 }
